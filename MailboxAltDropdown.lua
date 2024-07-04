@@ -10,6 +10,11 @@ local function AddCurrentCharacter()
     end
 end
 
+-- Function to remove a character from the database
+local function RemoveCharacter(name)
+    MailboxAltDropdownDB[name] = nil
+end
+
 -- Function to create the dropdown menu
 local function CreateAltDropdown()
     local dropdown = CreateFrame("Frame", "AltDropdown", SendMailFrame, "UIDropDownMenuTemplate")
@@ -21,8 +26,24 @@ local function CreateAltDropdown()
         for name, class in pairs(MailboxAltDropdownDB) do
             local color = RAID_CLASS_COLORS[class].colorStr
             info.text = "|c" .. color .. name .. "|r"
-            info.func = function()
-                SendMailNameEditBox:SetText(name)
+            info.notCheckable = true
+
+            -- Adding tooltip
+            info.tooltipTitle = "Actions"
+            info.tooltipText = "Leftclick -> Add name as recipient\nShift + Leftclick -> Remove name from list"
+            info.tooltipOnButton = true
+
+            -- Set the name and class as arguments
+            info.arg1 = name
+            info.arg2 = class
+
+            -- Function to handle left click
+            info.func = function(self, arg1, arg2)
+                if IsShiftKeyDown() then
+                    RemoveCharacter(arg1)
+                else
+                    SendMailNameEditBox:SetText(arg1)
+                end
             end
             UIDropDownMenu_AddButton(info)
         end

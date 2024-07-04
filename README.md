@@ -1,6 +1,6 @@
 # Mailbox Alt Dropdown
 
-Adds a dropdown menu to the mailbox for selecting alts. When you open the mailbox, you will see a dropdown menu listing all your alts on the realm, with their names colored according to their class. Clicking on an alt's name will paste it into the "To:" field of the mail.
+Adds a dropdown menu to the mailbox for selecting alts. When you open the mailbox, you will see a dropdown menu listing all your alts on the realm, with their names colored according to their class. Clicking on an alt's name will paste it into the "To:" field of the mail. Left clicking on a name to remove the name from the list.
 
 ## Features
 - Automatically detects your alts and their classes when you log in.
@@ -16,6 +16,16 @@ Adds a dropdown menu to the mailbox for selecting alts. When you open the mailbo
 - Open the mailbox.
 - Click on the dropdown menu next to the "To:" field.
 - Select an alt to paste their name into the "To:" field.
+- Shift + Click on a name to remove the name from the list.
 
 ## License
 This addon is licensed under the MIT License. See the LICENSE file for details.
+
+## Changelog
+
+### [1.1] - 2024-07-24
+#### Added
+- **SHIFT + Left Click Removal**: You can now remove an alt from the dropdown list by holding `SHIFT` and left-clicking on the name.
+- **Tooltip Instructions**: A tooltip has been added to each dropdown item, showing the following instructions:
+  - `Leftclick -> Add name as recipient`
+  - `Shift + Leftclick -> Remove name from list`
