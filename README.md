@@ -23,7 +23,7 @@ This addon is licensed under the MIT License. See the LICENSE file for details.
 
 ## Changelog
 
-### [1.1] - 2024-07-24
+### [1.1] - 05-07-2024
 #### Added
 - **SHIFT + Left Click Removal**: You can now remove an alt from the dropdown list by holding `SHIFT` and left-clicking on the name.
 - **Tooltip Instructions**: A tooltip has been added to each dropdown item, showing the following instructions:
