@@ -1,7 +1,7 @@
 ## Interface: 100002
 ## Title: Mailbox Alt Dropdown
 ## Notes: Adds a dropdown menu to the mailbox for selecting alts.
-## Author: kraven01
+## Author: Kraven01
 ## Version: 1.1
 ## SavedVariables: MailboxAltDropdownDB
 

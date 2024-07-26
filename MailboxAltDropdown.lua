@@ -10,6 +10,11 @@ local function AddCurrentCharacter()
     end
 end
 
+-- Function to remove a character from the database
+local function RemoveCharacter(name)
+    MailboxAltDropdownDB[name] = nil
+end
+
 -- Function to create the dropdown menu
 local function CreateAltDropdown()
     local dropdown = CreateFrame("Frame", "AltDropdown", SendMailFrame, "UIDropDownMenuTemplate")
