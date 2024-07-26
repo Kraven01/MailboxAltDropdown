@@ -19,3 +19,8 @@ Adds a dropdown menu to the mailbox for selecting alts. When you open the mailbo
 
 ## License
 This addon is licensed under the MIT License. See the LICENSE file for details.
+
+# Changelog
+[1.1] - 26-07-2024
+Changed
+- Sort names alphabetically
