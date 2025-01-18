@@ -23,6 +23,14 @@ This addon is licensed under the MIT License. See the LICENSE file for details.
 
 ## Changelog
 
+### [1.3] - 18-01-2025
+#### Added
+- Added realm name to character selection
+- Added configuration menu which is accesible using /mad
+- - Added blacklist option for each character inside config menu
+- - Added "note" feature as mouseover which can be set inside the config menu
+- - Added option to remove the default mouseover
+
 ### [1.2] - 26-07-2024
 #### Changed
 - Sort names alphabetically

@@ -2,7 +2,7 @@
 ## Title: Mailbox Alt Dropdown
 ## Notes: Adds a dropdown menu to the mailbox for selecting alts.
 ## Author: Kraven01
-## Version: 1.1
+## Version: 1.3
 ## SavedVariables: MailboxAltDropdownDB
 
 MailboxAltDropdown.lua
